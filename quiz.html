@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Your Knowledge! | Browser Cookies</title>
+
+  <link rel="stylesheet" href="css/images/style.css">
+</head>
+<body>
+
+ 
+  <header>
+    <h1>Browser Cookies</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-cookies-work.html">How Cookies Work</a></li>
+        <li><a href="cookie-types-privacy.html">Types and Privacy</a></li>
+        <li><a href="key-concepts.html">Key Concepts</a></li>
+        <li><a href="quiz.html">Test Your Knowledge!</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <h2>Test Your Knowledge!</h2>
+    <p>
+      Answer these 10 questions about browser cookies. You have 10 minutes, and
+      the timer starts as soon as this page opens. You need 70% or higher to pass.
+    </p>
+
+    <!-- Timer -->
+    <p id="timer" class="timer">Time left: 10:00</p>
+
+    <form id="quizForm">
+
+      <!-- Fill-in-the-Blank Questions -->
+      <fieldset class="question">
+        <legend>Question 1</legend>
+        <p>The server sends a cookie to the browser in the ________ header.</p>
+        <input type="text" id="q1" class="blank">
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 2</legend>
+        <p>HTTP is called ________ because the server does not remember earlier requests.</p>
+        <input type="text" id="q2" class="blank">
+      </fieldset>
+
+      <!-- Multiple Choice Questions -->
+      <fieldset class="question">
+        <legend>Question 3</legend>
+        <p>Who invented the cookie?</p>
+        <label><input type="radio" class="choice" name="q3" id="q3_1"> Tim Berners-Lee</label>
+        <label><input type="radio" class="choice" name="q3" id="q3_2"> Lou Montulli</label>
+        <label><input type="radio" class="choice" name="q3" id="q3_3"> Bill Gates</label>
+        <label><input type="radio" class="choice" name="q3" id="q3_4"> Marc Andreessen</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 4</legend>
+        <p>Which kind of cookie is set by a different website than the one you are visiting?</p>
+        <label><input type="radio" class="choice" name="q4" id="q4_1"> Session cookie</label>
+        <label><input type="radio" class="choice" name="q4" id="q4_2"> First-party cookie</label>
+        <label><input type="radio" class="choice" name="q4" id="q4_3"> Third-party cookie</label>
+        <label><input type="radio" class="choice" name="q4" id="q4_4"> Persistent cookie</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 5</legend>
+        <p>Which law requires websites to get consent before using non-essential cookies?</p>
+        <label><input type="radio" class="choice" name="q5" id="q5_1"> HIPAA</label>
+        <label><input type="radio" class="choice" name="q5" id="q5_2"> GDPR</label>
+        <label><input type="radio" class="choice" name="q5" id="q5_3"> FERPA</label>
+        <label><input type="radio" class="choice" name="q5" id="q5_4"> DMCA</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 6</legend>
+        <p>What does the HttpOnly setting do?</p>
+        <label><input type="radio" class="choice" name="q6" id="q6_1"> Sends the cookie only over HTTPS</label>
+        <label><input type="radio" class="choice" name="q6" id="q6_2"> Blocks JavaScript on the page from reading the cookie</label>
+        <label><input type="radio" class="choice" name="q6" id="q6_3"> Deletes the cookie when the browser closes</label>
+        <label><input type="radio" class="choice" name="q6" id="q6_4"> Sends the cookie to other websites</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 7</legend>
+        <p>Which cookie setting makes a cookie travel only over HTTPS connections?</p>
+        <label><input type="radio" class="choice" name="q7" id="q7_1"> HttpOnly</label>
+        <label><input type="radio" class="choice" name="q7" id="q7_2"> Secure</label>
+        <label><input type="radio" class="choice" name="q7" id="q7_3"> SameSite</label>
+        <label><input type="radio" class="choice" name="q7" id="q7_4"> Path</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 8</legend>
+        <p>When is a session cookie deleted?</p>
+        <label><input type="radio" class="choice" name="q8" id="q8_1"> When you close your browser</label>
+        <label><input type="radio" class="choice" name="q8" id="q8_2"> After exactly 30 days</label>
+        <label><input type="radio" class="choice" name="q8" id="q8_3"> When you visit another website</label>
+        <label><input type="radio" class="choice" name="q8" id="q8_4"> Never</label>
+      </fieldset>
+
+      <!-- Multi-Select Questions -->
+      <fieldset class="question">
+        <legend>Question 9</legend>
+        <p>Which of these are cookie settings? (Select all that apply.)</p>
+        <label><input type="checkbox" class="choice" id="q9_1"> Domain</label>
+        <label><input type="checkbox" class="choice" id="q9_2"> Margin</label>
+        <label><input type="checkbox" class="choice" id="q9_3"> Path</label>
+        <label><input type="checkbox" class="choice" id="q9_4"> SameSite</label>
+        <label><input type="checkbox" class="choice" id="q9_5"> Footer</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>Question 10</legend>
+        <p>Which browsers block third-party cookies by default? (Select all that apply.)</p>
+        <label><input type="checkbox" class="choice" id="q10_1"> Safari</label>
+        <label><input type="checkbox" class="choice" id="q10_2"> Google Chrome</label>
+        <label><input type="checkbox" class="choice" id="q10_3"> Firefox</label>
+        <label><input type="checkbox" class="choice" id="q10_4"> Brave</label>
+      </fieldset>
+
+      <!-- Submit and reset buttons -->
+      <button type="button" id="submitBtn">Submit Quiz</button>
+      <button type="button" id="resetBtn">Retake / Reset Quiz</button>
+    </form>
+
+    <!-- Results appear here after the quiz is submitted (quiz.js fills this in) -->
+    <div id="results"></div>
+  </main>
+
+
+  <footer>
+    <p>
+      This website is a class project for IT 3203.
+      Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 class website</a>.
+    </p>
+  </footer>
+
+
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -13,12 +13,13 @@
     <h1>Browser Cookies</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+       <li><a href="index.html">Home</a></li>
         <li><a href="how-cookies-work.html">How Cookies Work</a></li>
         <li><a href="cookie-types-privacy.html">Types and Privacy</a></li>
         <li><a href="key-concepts.html">Key Concepts</a></li>
         <li><a href="references.html">References</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Test Your Knowledge!</a></li>
       </ul>
     </nav>
   </header>
@@ -29,52 +30,55 @@
     <!-- This paragraph uses intro id -->
     <p id="intro">
       These six ideas explain most of what you need to know about browser
-      cookies. Each one builds on the others, so reading them in order helps.
+      cookies. Each one builds on the others.
     </p>
 
     <h3>1. The Web Is Stateless</h3>
     <p>
-      Web servers treat every request as brand new. By default, a server does
-      not remember that you just visited another page on the same site.
-      Cookies solve this problem by giving the server a way to recognize you.
+      A web server sees each request as a completely fresh one.
+       By default, the server does not know that you have already
+        visited some other page on the website. To help solve this
+         problem, cookies were invented.
     </p>
 
     <h3>2. Sessions</h3>
     <p>
-      A session is a period of activity, such as staying logged in. The server
-      usually gives you a random ID number, which your browser stores in a
-      cookie. On each request the browser sends the ID back, and the server
-      uses it to find your information.
+      A session represents an interval of activity, including being logged in.
+      Typically, the server provides you with a randomly generated ID that is stored
+      by your web browser in a cookie. Each time, on receiving a request, the server
+      looks for your data through this ID.
     </p>
 
     <h3>3. Cookie Security</h3>
     <p>
-      Cookies can hold sensitive things, such as a login session ID, so they
-      need protection. The <b>Secure</b> setting keeps a cookie from being sent
-      over unsecured connections, and <b>HttpOnly</b> stops scripts on the page
-      from reading it.
+      Cookies may carry private data like the session identifier for logins,
+      therefore they require security. <b>Secure</b> property will prevent a cookie
+      from traveling via an insecure connection, whereas <b>HttpOnly</b> will not allow
+      any script from the page to access it.
     </p>
 
     <h3>4. Cross-Site Tracking</h3>
     <p>
-      When an advertiser places cookies on many different websites, it can
-      recognize you on each one and build a profile of your interests. This is
-      one of the biggest privacy concerns about cookies.
+      If an advertiser plants cookies in many different websites, 
+      it can track you in all those sites and create a profile of 
+      your interests. This is one of the major privacy issues 
+      associated with cookies.
     </p>
 
     <h3>5. Consent</h3>
     <p>
-      Laws such as the GDPR require many websites to ask permission before
-      using non-essential cookies. That is why cookie banners appear when you
-      visit a site for the first time.
+      GDPR regulations require that most websites obtain permission
+       from users before implementing any non-essential cookies.
+        That is why cookie consent banners pop up when you visit a 
+        website for the first time.
     </p>
 
     <h3>6. Managing Your Cookies</h3>
     <p>
-      You are in control of the cookies stored in your browser. You can view
-      them, delete them, and block certain types in your browser's privacy
-      settings. Deleting cookies will log you out of most websites, so expect
-      to sign in again.
+      You have complete control over the cookies that are stored in your browser.
+      You can see them, delete them, and block specific ones in your browser’s privacy
+      settings. Deleting cookies means you will be logged out of almost all websites,
+      so be prepared to login again.
     </p>
   </main>
 
